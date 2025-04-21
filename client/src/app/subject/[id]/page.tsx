@@ -1,6 +1,7 @@
 export default function SubjectPage({
-  params,
+
 }: {
+  
   params: { id: string };
 }) {
   return (
