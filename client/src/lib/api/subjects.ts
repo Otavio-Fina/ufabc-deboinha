@@ -1,5 +1,4 @@
-import { mockSubjects } from '../constants/subjects';
-import { Subject } from '@/types/subject';
+import { mockSubjects, Subject } from '../constants/subjects';
 
 export async function getSubjects(): Promise<Subject[]> {
   return new Promise(resolve => setTimeout(() => resolve(mockSubjects), 500));
