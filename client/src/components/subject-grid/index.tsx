@@ -15,8 +15,8 @@ export default function SubjectGrid({ subjects }: { subjects: typeof mockSubject
             key={subject.id}
             className="block"
           >
-            <motion.div className={` border border-gray-200 rounded-lg shadow-md hover:shadow-lg overflow-hidden h-60 flex flex-col hover:bg-white
-            bg-` + subject.color + ` hover:text-` + subject.color}
+            <motion.div className={`bg-${subject.color} border border-gray-200 rounded-lg shadow-md hover:shadow-lg overflow-hidden h-60 flex flex-col hover:bg-white 
+            hover:text-${subject.color}`}
             initial={{ opacity: 0, y: -100  }} animate={{ opacity: 1, y: 0 }}
             transition={{
               duration: 0.3,
